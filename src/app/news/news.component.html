@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>News works!</h1>
+  <h2>News</h2>
+</div>
+
+<div class="card">
+  <div *ngFor="let item of news">
+    <h3>{{ item.title }}</h3>
+    <p>{{ item.description }}</p>
+    <p>Author: {{ item.author }}</p>
+    <p>Published at: {{ item.publishedAt }}</p>
+    <img [src]="item.urlToImage" alt="News Image" width="200" />
+    <p>Content: {{ item.content }}</p>
+    <a [href]="item.url" target="_blank">Read More</a>
+    <hr />
+  </div>
+</div>
+<
